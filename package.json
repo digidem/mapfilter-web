@@ -10,9 +10,13 @@
   },
   "dependencies": {
     "d3-request": "^1.0.3",
+    "drag-drop": "^2.13.2",
+    "insert-css": "^2.0.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-mapfilter": "1.0.0-alpha.1",
+    "react-intl": "^2.2.3",
+    "react-mapfilter": "1.0.0-alpha.2",
+    "react-overlays": "^0.6.11",
     "react-tap-event-plugin": "^2.0.1"
   },
   "devDependencies": {

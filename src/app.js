@@ -40,6 +40,7 @@ class App extends React.Component {
     this.login = this.login.bind(this)
     this.onProgress = this.onProgress.bind(this)
     this.handleAddButtonClick = this.handleAddButtonClick.bind(this)
+    this.closeModal = this.closeModal.bind(this)
     this.auth = new Authenticator({site_id: 'mapfilter.ddem.us'})
   }
 
@@ -87,6 +88,10 @@ class App extends React.Component {
     this.setState({showModal: true})
   }
 
+  closeModal () {
+    this.setState({showModal: false})
+  }
+
   render () {
     const {features, loading, loadError, progress, showModal} = this.state
     return (
@@ -95,7 +100,7 @@ class App extends React.Component {
         : loading ? <LinearProgress mode={progress ? 'determinate' : 'indeterminate'} value={progress} />
         : loadError ? this.renderLoginButton()
         : <div>Auth error or missing data</div>}
-        {showModal && <Modal component={XFormUploader} />}
+        {showModal && <Modal component={XFormUploader} closeModal={this.closeModal} />}
       </div>
     )
   }

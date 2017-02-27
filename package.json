@@ -15,7 +15,7 @@
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-intl": "^2.2.3",
-    "react-mapfilter": "1.0.0-alpha.6",
+    "react-mapfilter": "1.0.0-alpha.7",
     "react-overlays": "^0.6.11",
     "react-tap-event-plugin": "^2.0.1",
     "xform-uploader": "github:digidem/xform-uploader#integration"
